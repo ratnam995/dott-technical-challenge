@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Classifier page renders correctly 1`] = `
+<div
+  className="scroll-container"
+>
+  <div
+    className="form-container wrapper"
+  >
+    <div
+      className="form-wrapper"
+    >
+      <form
+        id="form-file-upload"
+        onDragEnter={[Function]}
+        onDrop={[Function]}
+        onSubmit={[Function]}
+      >
+        <input
+          id="input-file-upload"
+          multiple={false}
+          onChange={[Function]}
+          type="file"
+        />
+        <label
+          className=""
+          htmlFor="input-file-upload"
+          id="label-file-upload"
+        >
+          <div>
+            <p>
+              Drag and drop your file here or
+            </p>
+            <button
+              className="upload-button"
+              onClick={[Function]}
+            >
+              Upload a file
+            </button>
+          </div>
+        </label>
+        <button
+          className="confirm-btn"
+          onClick={[Function]}
+        >
+          Confirm
+        </button>
+      </form>
+    </div>
+    <div
+      className="preview-wrapper"
+    />
+  </div>
+</div>
+`;

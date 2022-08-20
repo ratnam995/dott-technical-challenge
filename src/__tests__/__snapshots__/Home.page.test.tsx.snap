@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page renders correctly 1`] = `
+Array [
+  <div>
+    Image Classifier Pro
+  </div>,
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Dogs
+    </button>
+  </div>,
+]
+`;

@@ -10,9 +10,13 @@
     "@types/node": "^16.11.48",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "jest": "^28.1.3",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "ts-jest": "^28.0.8",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.184",
+    "@types/react-test-renderer": "^18.0.0",
+    "react-test-renderer": "^18.2.0"
   }
 }
