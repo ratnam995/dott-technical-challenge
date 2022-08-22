@@ -49,3 +49,24 @@ This App contains 2 routes (or pages):
 ### State management
 
 This app uses component's local state.
+
+### High level user journey walk through in sync with code
+
+- User lands on home and clicks on the Dogs button.
+- User is redirected to /dogs page where there is a form to choose an image file.
+- On choosing the image, preview of the image is visible after which user can confirm to classify the image.
+- Once image is classified all the images for the dog's breed is fetched and stored.
+- User views and clicks on the `View gallery` button, to view th gallery.
+- In the gallery, the 10 images (at a time) are filtered and returned from the list of all the images (there is not dogs-ceo API which allows pagination) and are displayed.
+- These 10 images are lazyloaded.
+- There is infinte scroll implemented, so when the user scrolls to the bottom next 10 images are fetched and lazily loaded.
+- User can go back to the form, by clicking the `View form` button and change the selected image anytime.
+
+### Unit tests
+
+I have setup Jest for unit tests. Snapshot testing for all the components is setup.
+Full unit tests, I have written only for dogs-api and utils services because of the limited time.
+
+### Known issues/bugs/optimisations
+
+- **Optimisation:** The infinite scroll keeps on hitting the API (in this case a mock function to return paginated data) even after all the data is fetched. Since I had so many things to setup and implement during the 8 hours I deprioritised fixing it. Hope it does not has much impact on the assessment.

@@ -65,7 +65,7 @@ export const FileReader = forwardRef((props: iFileReaderPropTypes, ref: Forwarde
     return <div ref={ref} className="form-container wrapper">
         <div className="form-wrapper">
             <form id="form-file-upload" onSubmit={(e) => e.preventDefault()}>
-                <input ref={inputRef} type="file" id="input-file-upload" multiple={false} onChange={handleChange} />
+                <input ref={inputRef} type="file" id="input-file-upload" multiple={false} onChange={handleChange} accept="image/png, image/jpeg" />
                 <label id="label-file-upload" htmlFor="input-file-upload">
                 <div>
                     <button className="upload-button" onClick={onFileUploadBtnClick}>
